@@ -17,12 +17,10 @@ private:
     }
 
     void heapifyUp(int index){
-
         if(index && A[parent(index)] > A[index]){
             swap(A[parent(index)],A[index]);
             heapifyUp(parent(index));
         }
-
     }
 
     void heapifyDown(int index ){
